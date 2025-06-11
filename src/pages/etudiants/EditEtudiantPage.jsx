@@ -18,7 +18,7 @@ const initialForm = {
    ID_CLASSE: "",
 }
 
-export default function EditEtudiantPage() {
+export default function EditEtudiantPage() { fvfgh
    const dispatch = useDispatch()
    const [data, handleChange, setData, setValue] = useForm(initialForm)
    const [isSubmitting, setIsSubmitting] = useState(false)
