@@ -1,0 +1,111 @@
+body {
+   background-color: #eff3f8 !important;
+   overflow-y: hidden;
+}
+.main {
+   width: 1%;
+}
+.main_content {
+   min-height: calc(100vh - 60px);
+   height: calc(100vh - 60px);
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+.main_content.has_footer {
+   min-height: calc(100vh - 120px);
+   height: calc(100vh - 120px);
+}
+.no-p .p-dropdown-label {
+   padding-top: 9px;
+   padding-bottom: 9px;
+}
+.p-datatable-wrapper {
+   border-radius: var(--bs-border-radius) !important;
+}
+
+.modal-loading-container {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: rgba(255, 255, 255, 0.6);
+   z-index: 10;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.modal-loading-content {
+   height: 50px;
+}
+
+* {
+   scrollbar-width: thin;
+   scrollbar-color: #f3f3f3;
+}
+*::-webkit-scrollbar {
+   width: 7px;
+   height: 7px;
+   border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+   background: #f3f3f3;
+   padding: 1px;
+}
+
+*::-webkit-scrollbar-thumb {
+   background-color: #c4c4c4;
+   border-radius: 10px;
+}
+
+.main_content .shadow.rounded {
+   overflow-y: hidden;
+   overflow-x: scroll;
+}
+
+@media screen and (max-width: 750px) {
+   .main_content.has_footer form {
+      width: 100% !important;
+   }
+   .main_content.has_footer form .w-75 {
+      width: 100% !important;
+   }
+   .main_content.has_footer form .form-group.mt-5,
+   .main_content.has_footer form .form-group .row .col-md-4.mt-5 {
+      margin-top: 0rem !important;
+   }
+   .main_content.has_footer form .form-group .row .col-sm.mt-5 {
+      margin-top: 5px !important;
+   }
+   .main_content.has_footer form .form-group.mt-5 .row .col-sm {
+      margin-top: 5px !important;
+   }
+   .p-dialog.p-component.p-dialog-default {
+      width: 95vw !important;
+   }
+}
+@media screen and (max-width: 500px) {
+   #request_rides_overview {
+      width: 100% !important;
+   }
+   .main_content {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+   }
+   #canceledRides-types {
+      padding: 0 !important;
+   }
+   header.px-4 {
+      padding-left: 0.2rem !important;
+      padding-right: 0.2rem !important;
+   }
+   .dashboard-title {
+      font-size: 1rem;
+   }
+   .p-frozen-column {
+      position: static !important;
+   }
+}
